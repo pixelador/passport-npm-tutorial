@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Scotch.io Tutorial https://scotch.io/tutorials/easy-node-authentication-setup-and-local",
   "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
     "bcrypt-nodejs": "latest",
     "body-parser": "~1.0.0",
