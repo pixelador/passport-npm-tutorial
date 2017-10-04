@@ -18,6 +18,8 @@ let configDB = require('./config/database');
  */
 mongoose.connect(configDB.url); // connect to database
 
+require('./config/passport')(passport); // pass passport for configuration
+
 // setup express application
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookes (needed for auth)
